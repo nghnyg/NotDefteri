@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4c3">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:background="@android:color/transparent"
+            android:textAlignment="textStart"
+            android:id="@+id/editText" >
+
+        </EditText>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"/>
+
+</FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="70dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/delete"
+            android:id="@+id/btnSil"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnPhoto"
+            android:background="@drawable/photo"
+            android:layout_alignTop="@+id/btnKaydet"
+            android:layout_toStartOf="@+id/btnKaydet"
+            android:layout_marginEnd="101dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/save"
+            android:id="@+id/btnKaydet"
+           android:layout_marginEnd="15dp"
+            android:layout_alignBottom="@+id/btnSil"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>
